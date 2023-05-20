@@ -1,12 +1,26 @@
-<?php $url = "/CODIM"; ?>
+<div class="presentacion">
+    <img class="title" src="/CODIM/resources/IMG/CODIM.png">
+</div>
 
-<meta charset="UTF-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-<link rel="stylesheet" href="<?= $url ?>/resources/CSS/styles.css">
-<link rel="stylesheet" href="<?= $url ?>/resources/BOOTSTRAP/js/bootstrap.bundle.min.js"">
-<title>CODIM</title>
+<nav class="navbar navbar-expand-sm justify-content-center sticky-top">
+    <ul class="nav nav-pills">
+        <li class="nav-item">
+            <a id="nav" class="nav-link active" data-bs-toggle="pill" href="#acerca">Acerca de</a>
+        </li>
+        <li class="nav-item">
+            <a id="nav" class="nav-link" data-bs-toggle="pill" href="#servicios">Servicios</a>
+        </li>
+        <li class="nav-item">
+            <a id="nav" class="nav-link" data-bs-toggle="pill" href="#equipo">Equipo</a>
+        </li>
+        <li class="nav-item">
+            <a id="nav" class="nav-link" data-bs-toggle="pill" href="#tecnologias">Tecnologias</a>
+        </li>
+        <li class="nav-item">
+            <a id="nav" class="nav-link" data-bs-toggle="pill" href="#proceso">Proceso de desarrollo</a>
+        </li>
+        <li class="nav-item">
+            <a id="nav" class="nav-link" data-bs-toggle="pill" href="#contacto">Contacto</a>
+        </li>
+    </ul>
+</nav>
