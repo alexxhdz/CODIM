@@ -1,0 +1,106 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #6DA5C0;
+  }
+  
+  .container {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  /* Estilos del encabezado */
+  header {
+    background-color: #294d61;
+    color: #fff;
+    padding: 20px;
+  }
+  
+  header h1 {
+    margin: 0;
+  }
+  
+  /* Estilos de la navegación */
+  nav {
+    margin-top: 10px;
+  }
+  
+  nav a {
+    color: aliceblue;
+    text-decoration: none;
+    margin: 10px;
+    padding: 5px;
+    border-radius: 2px;
+  }
+
+  a:hover{
+    background-color: #05161a;
+  }
+
+  a:active{
+    background-color: #e2e9ec;
+    color: #1c1c1c;
+  }
+  
+  nav {
+    margin: 0 10px;
+  }
+  
+  nav ul li a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  /* Estilos de las secciones */
+  section {
+    margin-bottom: 20px;
+    background-color: #05161a;
+    color: #e2e9ec;
+    text-align: justify;
+    margin: 16px;
+    border: 5px solid #294D61;
+    border-radius: 5px;
+  }
+
+  section h2 {
+    margin: 0;
+  }
+  
+  section p {
+    margin: 10px;
+  }
+  /* Estilos del pie de página */
+  footer {
+    background-color: #294d61;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  /* Estilos responsivos */
+  @media only screen and (max-width: 600px) {
+    header {
+      padding: 10px;
+    }
+  
+    header h1 {
+      font-size: 24px;
+    }
+  
+    nav ul {
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+  
+    nav ul li {
+      margin: 5px;
+    }
+  
+    footer {
+      padding: 10px;
+    }
+  }
+  
