@@ -2,7 +2,7 @@
     <img class="title" src="/CODIM/resources/IMG/CODIM.png">
 </div>
 
-<nav class="navbar navbar-expand-sm justify-content-center sticky-top">
+<nav class="navbar navbar-expand-md navDesign justify-content-center sticky-top">
     <ul class="nav nav-pills">
         <li class="nav-item">
             <a id="nav" class="nav-link active" data-bs-toggle="pill" href="#acerca">Acerca de</a>
