@@ -1,0 +1,143 @@
+/* Estilos generales */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #0B1E3E;
+}
+
+.container {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+
+/*Animación del color del background*/
+
+.bg {
+    align-items: center;
+    justify-content: center;
+    background-size: 1000% 1000%;
+    background-image: linear-gradient(-45deg, rgb(59, 173, 227) 0%, rgb(87, 111, 230) 25%, rgb(152, 68, 183) 51%, rgb(255, 53, 127) 100%);
+    animation: AnimateBG 20s ease infinite;
+}
+
+@keyframes AnimateBG {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+
+/* Estilos del encabezado */
+
+header {
+    background-color: #112C59;
+    color: #fff;
+    padding: 20px;
+}
+
+header h1 {
+    margin: 10px;
+}
+
+
+/* Estilos de la navegación */
+
+nav {
+    margin-top: 10px;
+}
+
+nav a {
+    color: aliceblue;
+    text-decoration: none;
+    margin: 10px;
+    padding: 5px;
+    border-radius: 2px;
+}
+
+a:hover {
+    background-color: #38FBDB;
+    color: #05161a;
+}
+
+a:active {
+    background-color: #FC0FF5;
+    color: #ffffff;
+}
+
+nav {
+    margin: 10px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+
+/* Estilos de las secciones */
+
+section {
+    margin-bottom: 20px;
+    background-color: #0B1E3E;
+    color: #e2e9ec;
+    text-align: justify;
+    margin: 16px;
+    border: 5px solid #38FBDB;
+    border-radius: 5px;
+}
+
+section h2 {
+    margin: 10px;
+    background-color: #0B1E3E;
+}
+
+section p {
+    margin: 10px;
+}
+
+section img {
+    width: 50px;
+    height: 50px;
+}
+
+
+/* Estilos del pie de página */
+
+footer {
+    background-color: #112C59;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+
+/* Estilos responsivos */
+
+@media only screen and (max-width: 600px) {
+    header {
+        padding: 10px;
+    }
+    header h1 {
+        font-size: 24px;
+    }
+    nav ul {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    nav ul li {
+        margin: 5px;
+    }
+    footer {
+        padding: 10px;
+    }
+}
