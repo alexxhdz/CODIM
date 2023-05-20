@@ -3,7 +3,7 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #6DA5C0;
+    background-color: #0B1E3E;
   }
   
   .container {
@@ -14,13 +14,13 @@ body {
   
   /* Estilos del encabezado */
   header {
-    background-color: #294d61;
+    background-color: #112C59 ;
     color: #fff;
     padding: 20px;
   }
   
   header h1 {
-    margin: 0;
+    margin: 10px;
   }
   
   /* Estilos de la navegación */
@@ -37,16 +37,17 @@ body {
   }
 
   a:hover{
-    background-color: #05161a;
+    background-color: #38FBDB;
+    color: #05161a;
   }
 
   a:active{
-    background-color: #e2e9ec;
-    color: #1c1c1c;
+    background-color: #FC0FF5;
+    color: #ffffff;
   }
   
   nav {
-    margin: 0 10px;
+    margin: 10px;
   }
   
   nav ul li a {
@@ -57,24 +58,30 @@ body {
   /* Estilos de las secciones */
   section {
     margin-bottom: 20px;
-    background-color: #05161a;
+    background-color: #0B1E3E;
     color: #e2e9ec;
     text-align: justify;
     margin: 16px;
-    border: 5px solid #294D61;
+    border: 5px solid #38FBDB;
     border-radius: 5px;
   }
 
   section h2 {
-    margin: 0;
+    margin: 10px;
+    background-color: #0B1E3E;
   }
   
   section p {
     margin: 10px;
   }
+
+  section img{
+    width: 50px;
+    height: 50px;
+  }
   /* Estilos del pie de página */
   footer {
-    background-color: #294d61;
+    background-color: #112C59;
     color: #fff;
     padding: 20px;
     text-align: center;
