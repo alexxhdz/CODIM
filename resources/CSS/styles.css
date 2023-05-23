@@ -1,9 +1,4 @@
 /* Estilos generales */
-
-body {
-    font-family: Arial, sans-serif;
-}
-
 .contentScroll {
     overflow: auto;
     overflow-x: hidden;
@@ -63,7 +58,7 @@ body {
 .bg {
     align-items: center;
     justify-content: center;
-    background-size: 1000% 1000%;
+    background-size: 2000% 2000%;
     background-image: linear-gradient(-45deg, rgb(59, 173, 227) 0%, rgb(87, 111, 230) 25%, rgb(152, 68, 183) 51%, rgb(255, 53, 127) 100%);
     animation: AnimateBG 20s ease infinite;
 }
@@ -99,7 +94,7 @@ a#nav{
 }
 
 a#nav:hover{
-    color: #9a9a9a !important;
+    color: #aeaeae !important;
 }
 
 .active#nav{
@@ -109,11 +104,14 @@ a#nav:hover{
     border-radius: 50px !important;
 }
 
-.centeredNav {
-    position: relative;
-    left: 50%;
-    transform: translateX(-50%);
+.active#nav:hover{
+    background-color: rgb(127, 246, 255) !important;
+    color: #040404 !important;
+    font-weight: bold;
+    border-radius: 50px !important;
 }
+
+
 
 
 /* Estilos de las secciones */
@@ -150,6 +148,7 @@ a#nav:hover{
 }
 
 
+
 /* Estilos del pie de página */
 
 footer {
@@ -157,6 +156,13 @@ footer {
     color: #fff;
     padding: 20px;
     text-align: center;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    overflow: visible;
+    z-index: 0;
+    clear: both;
+    min-height: 28px;
 }
 
 
@@ -166,21 +172,3 @@ footer {
     margin-top: 100px;
 } */
 
-@media only screen and (max-width: 600px) {
-    header {
-        padding: 10px;
-    }
-    header h1 {
-        font-size: 24px;
-    }
-    nav ul {
-        flex-wrap: wrap;
-        justify-content: center;
-    }
-    nav ul li {
-        margin: 5px;
-    }
-    footer {
-        padding: 10px;
-    }
-}

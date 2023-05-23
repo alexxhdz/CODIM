@@ -28,7 +28,7 @@
             </div>
         </div>
 
-        <div class="tab-pane container fade active" id="servicios">
+        <div class="tab-pane container fade centerDiv" id="servicios">
             <div class="services">
                 <script>
                     $(document).ready(function() {
@@ -38,17 +38,17 @@
             </div>
         </div>
 
-        <div class="tab-pane container fade active" id="equipo">
-            <div class="services">
+        <div class="tab-pane container fade centerDiv" id="equipo">
+            <div class="equipo">
                 <script>
                     $(document).ready(function() {
-                        $('.services').load('public/sections/equipo.php');
+                        $('.equipo').load('public/sections/equipo.php');
                     });
                 </script>
             </div>
         </div>
 
-        <div class="tab-pane container fade active" id="tecnologias">
+        <div class="tab-pane container fade centerDiv" id="tecnologias">
             <div class="tecnologia">
                 <script>
                     $(document).ready(function() {
@@ -58,7 +58,7 @@
             </div>
         </div>
 
-        <div class="tab-pane container fade active" id="proceso">
+        <div class="tab-pane container fade centerDiv" id="proceso">
             <div class="proceso">
                 <script>
                     $(document).ready(function() {
@@ -68,7 +68,7 @@
             </div>
         </div>
 
-        <div class="tab-pane container fade active" id="contacto">
+        <div class="tab-pane container fade centerDiv" id="contacto">
             <div class="contacto">
                 <script>
                     $(document).ready(function() {

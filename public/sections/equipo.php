@@ -3,4 +3,5 @@
 <h3>Integrantes y contacto:</h3>
 <ul>
     <li>Irving Alejandro Hernandez Ramirez</li>
+    <li>Brandon Guerra Espinoza</li>
 </ul>
