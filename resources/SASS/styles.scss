@@ -1,0 +1,175 @@
+/* Estilos generales */
+@mixin style-centered{
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.contentScroll {
+    overflow: auto;
+    overflow-x: hidden;
+  }
+  
+  .contentScroll::-webkit-scrollbar {
+    width: 8px;
+  }
+  
+  .contentScroll::-webkit-scrollbar-thumb {
+    background: rgba(116, 0, 218, 0.5);
+    border-radius: 25px;
+  }
+  
+  .contentScroll::-webkit-scrollbar-thumb:active {
+    background: rgba(255, 255, 255, 0.6);
+    width: 10px !important;
+  }
+  
+  .contentScroll::-webkit-scrollbar-thumb:hover {
+    background: rgba(0, 0, 198, 0.6);
+    border-radius: 25px;
+    width: 10px !important;
+  }
+  
+  .contentScroll::-webkit-scrollbar-track {
+    border-radius: 25px;
+  }
+
+  div.presentacion {
+    background-image: url("/CODIM/resources/IMG/codigo.jpg");
+    background-size: cover;
+    height: 200px;
+  }
+
+  div.presentacion h1.titulo {
+    position: relative;
+    @include style-centered();
+    color: white;
+    font-weight: bold;
+    text-align: center;
+  }
+
+  .title{
+    width: 270px !important;
+    position: relative;
+    @include style-centered();
+  }
+
+
+/*Animación del color del background*/
+
+.bg {
+    align-items: center;
+    justify-content: center;
+    background-size: 2000% 2000%;
+    background-image: linear-gradient(-45deg, rgb(59, 173, 227) 0%, rgb(87, 111, 230) 25%, rgb(152, 68, 183) 51%, rgb(255, 53, 127) 100%);
+    animation: AnimateBG 20s ease infinite;
+}
+
+@keyframes AnimateBG {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+
+/* Estilos de la navegación */
+
+.navDesign {
+    background-color: #112C59;
+    color: #fff;
+    padding: 20px !important;
+}
+
+.nav-item .nav-link {
+    border-radius: 20px !important;
+  }  
+
+a#nav{
+    color: #ffffff !important;
+    padding-inline: 20px !important;
+}
+
+a#nav:hover{
+    color: #aeaeae !important;
+}
+
+.active#nav{
+    background-color: aquamarine !important;
+    color: #040404 !important;
+    font-weight: bold;
+    border-radius: 50px !important;
+}
+
+.active#nav:hover{
+    background-color: rgb(127, 246, 255) !important;
+    color: #040404 !important;
+    box-shadow: 0px 0px 15px rgb(192, 0, 251) !important;
+    font-weight: bold;
+    border-radius: 50px !important;
+}
+
+
+
+
+/* Estilos de las secciones */
+
+.container {
+    margin-bottom: 20px;
+    background-color: #0b1e3e7e;
+    color: #e2e9ec;
+    text-align: justify;
+    margin: 16px;
+    border: 5px solid #38fbdab1;
+    border-radius: 5px;
+}
+
+@mixin margin-container{
+    margin: 10px;
+}
+
+.container{
+    h1{
+        @include margin-container();
+    }
+    h3{
+        @include margin-container();
+    }
+    p{
+        @include margin-container();
+        li{
+            @include margin-container();
+        }
+    }
+    img{
+        width: 50px;
+        height: 50px;
+    }
+    
+}
+
+
+/* Estilos del pie de página */
+
+footer {
+    background-color: #112C59;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    overflow: visible;
+    z-index: 0;
+    clear: both;
+    min-height: 28px;
+}
+
+
+/* Estilos responsivos */
+
