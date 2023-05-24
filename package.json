@@ -1,0 +1,21 @@
+{
+  "name": "codim",
+  "version": "1.0.0",
+  "description": "Página WEB de CODIM",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "sass": "sass --watch resources/SASS/styles.scss resources/CSS/styles.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/axxrootwork/CODIM.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/axxrootwork/CODIM/issues"
+  },
+  "homepage": "https://github.com/axxrootwork/CODIM#readme"
+}
