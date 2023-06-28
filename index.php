@@ -34,6 +34,8 @@
     <br>
     <br>
 
+    <!-- Se moverán los contenidos a archivos externos para mayor organización y fácil lectura del código. -->
+
     <div>
         <h1 class="titles">Acerca de COD<span class="verde">IM</span></h1>
         <div class="containt1">
