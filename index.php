@@ -5,86 +5,91 @@
     <?php require_once("public/views/layouts/head.php") ?>
 </head>
 
-<body class="bg contentScroll">
-    <header class="navegador">
-        <script>
-            $(document).ready(function() {
-                $('.navegador').load('public/views/layouts/header.php');
-            });
-        </script>
+<body class="contentScroll">
+    <header>
+        <nav class="navbar navbar-expand-md navDesign justify-content-center fixed-top">
+            <ul class="nav nav-pills">
+                <li class="nav-item">
+                    <a id="nav" class="nav-link" data-bs-toggle="pill" href="#acerca">Acerca de</a>
+                </li>
+                <li class="nav-item">
+                    <a id="nav" class="nav-link" data-bs-toggle="pill" href="#servicios">Servicios</a>
+                </li>
+                <li class="nav-item">
+                    <a id="nav" class="nav-link" data-bs-toggle="pill" href="#equipo">Portafolio</a>
+                </li>
+                <li class="nav-item">
+                    <a id="nav" class="nav-link" data-bs-toggle="pill" href="#proceso">Proceso de trabajo</a>
+                </li>
+                <li class="nav-item">
+                    <a id="nav" class="nav-link" data-bs-toggle="pill" href="#contacto">Contacto</a>
+                </li>
+            </ul>
+        </nav>
     </header>
 
-    <!-- Contenido -->
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
 
-    <div class="tab-content">
+    <div>
+        <h1 class="titles">Acerca de COD<span class="verde">IM</span></h1>
+        <div class="containt1">
+            <div class="contenido">
+                <div class="row">
+                    <div class="col">
+                        <div class="avatar">
+                            <center>
+                                <div class="perfil">
+                                    <img src="resources/IMG/codigo.jpg">
+                                </div>
+                            </center>
+                            <a class="button btn btns">Agendar una cita</a>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <h2>Sobre <span class="verde">nosotros</span></h2>
+                        <p>
+                            Texto de ejemplo
+                        </p>
+                    </div>
+                </div>
+            </div>
 
-        <div class="tab-pane container active" id="acerca">
-            <div class="nosotros">
-                <script>
-                    $(document).ready(function() {
-                        $('.nosotros').load('public/sections/acerca.php');
-                    });
-                </script>
+            <h1 class="titles"><span class="verde">Servi</span>cios</h1>
+            <div class="containt2">
+                <div class="contenido">
+
+                </div>
+
+                <h1 class="titles">Porta<span class="verde">folio</span></h1>
+                <div class="containt1">
+                    <div class="contenido">
+                        <h1 class="titles">Proceso de <span class="verde">trabajo</span></h1>
+
+                    </div>
+
+                    <h1 class="titles"><span class="verde">Con</span>tacto</h1>
+                    <div class="containt2">
+                        <div class="contenido">
+
+                        </div>
+
+
+                    </div>
+
+                </div>
+
             </div>
         </div>
-
-        <div class="tab-pane container fade centerDiv" id="servicios">
-            <div class="services">
-                <script>
-                    $(document).ready(function() {
-                        $('.services').load('public/sections/services.php');
-                    });
-                </script>
-            </div>
-        </div>
-
-        <div class="tab-pane container fade centerDiv" id="equipo">
-            <div class="equipo">
-                <script>
-                    $(document).ready(function() {
-                        $('.equipo').load('public/sections/equipo.php');
-                    });
-                </script>
-            </div>
-        </div>
-
-        <div class="tab-pane container fade centerDiv" id="tecnologias">
-            <div class="tecnologia">
-                <script>
-                    $(document).ready(function() {
-                        $('.tecnologia').load('public/sections/tecnologias.php');
-                    });
-                </script>
-            </div>
-        </div>
-
-        <div class="tab-pane container fade centerDiv" id="proceso">
-            <div class="proceso">
-                <script>
-                    $(document).ready(function() {
-                        $('.proceso').load('public/sections/proceso.php');
-                    });
-                </script>
-            </div>
-        </div>
-
-        <div class="tab-pane container fade centerDiv" id="contacto">
-            <div class="contacto">
-                <script>
-                    $(document).ready(function() {
-                        $('.contacto').load('public/sections/contacto.php');
-                    });
-                </script>
-            </div>
-        </div>
-
     </div>
 
 
-    <footer>
-        <!-- Aquí puedes agregar el pie de página con los enlaces adicionales y derechos de autor -->
+    <!-- <footer>
         <footer>Footer de la pagina web</footer>
-    </footer>
+    </footer> -->
 </body>
 
 </html>
