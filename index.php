@@ -6,8 +6,17 @@
 </head>
 
 <body class="contentScroll">
+
+    <div class="banner">
+        <img src="resources/IMG/codigoMorado.jpg" alt="Fondo de la pagina">
+        <div class="hero-contenido">
+            <img src="resources/IMG/CODIM.png" alt="Foto de perfil">
+        </div>
+    </div>
+
+
     <header>
-        <nav class="navbar navbar-expand-md navDesign justify-content-center fixed-top">
+        <nav class="navbar navbar-expand-md navDesign justify-content-center ">
             <ul class="nav nav-pills">
                 <li class="nav-item">
                     <a id="nav" class="nav-link" data-bs-toggle="pill" href="#acerca">Acerca de</a>
@@ -37,7 +46,7 @@
     <!-- Se moverán los contenidos a archivos externos para mayor organización y fácil lectura del código. -->
 
     <div>
-        <h1 class="titles">Acerca de COD<span class="verde">IM</span></h1>
+        <h1 class="titles">Acerca de COD<span class="txtGradial">IM</span></h1>
         <div class="containt1">
             <div class="contenido">
                 <div class="row">
@@ -52,7 +61,7 @@
                         </div>
                     </div>
                     <div class="col">
-                        <h2>Sobre <span class="verde">nosotros</span></h2>
+                        <h2>Sobre <span class="txtGradial">nosotros</span></h2>
                         <p>
                             Texto de ejemplo
                         </p>
@@ -60,20 +69,20 @@
                 </div>
             </div>
 
-            <h1 class="titles"><span class="verde">Servi</span>cios</h1>
+            <h1 class="titles"><span class="txtGradial">Servi</span>cios</h1>
             <div class="containt2">
                 <div class="contenido">
 
                 </div>
 
-                <h1 class="titles">Porta<span class="verde">folio</span></h1>
+                <h1 class="titles">Porta<span class="txtGradial">folio</span></h1>
                 <div class="containt1">
                     <div class="contenido">
-                        <h1 class="titles">Proceso de <span class="verde">trabajo</span></h1>
+                        <h1 class="titles">Proceso de <span class="txtGradial">trabajo</span></h1>
 
                     </div>
 
-                    <h1 class="titles"><span class="verde">Con</span>tacto</h1>
+                    <h1 class="titles"><span class="txtGradial">Con</span>tacto</h1>
                     <div class="containt2">
                         <div class="contenido">
 
