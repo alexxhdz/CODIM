@@ -13,6 +13,11 @@
   border-top-left-radius: 145px;
 }
 
+@mixin bordes-imagenes {
+  border-radius: 35px !important;
+}
+
+$azulDeFondo: #000545;
 $azulFuerte: #12229d;
 $azulClaro: #233dff;
 $azulHover: #cae8ff;
@@ -33,18 +38,42 @@ body {
   user-select: none !important;
   -webkit-user-select: none !important;
   color: $textos !important;
-  background-color: #000545 !important;
+  background-color: $azulDeFondo !important;
+}
+
+.contentScroll {
+  overflow: auto;
+  overflow-x: hidden;
+}
+
+.contentScroll::-webkit-scrollbar {
+  width: 8px;
+}
+
+.contentScroll::-webkit-scrollbar-thumb {
+  background: $verde;
+  border-radius: 25px;
+}
+
+.contentScroll::-webkit-scrollbar-thumb:active {
+  background: rgba(255, 255, 255, 0.6);
+  width: 10px !important;
+}
+
+.contentScroll::-webkit-scrollbar-thumb:hover {
+  background: $azulClaro;
+  border-radius: 25px;
+  width: 10px !important;
+}
+
+.contentScroll::-webkit-scrollbar-track {
+  border-radius: 25px;
 }
 
 .txtGradial {
   /*  leverage cascade for cross-browser gradients  */
   background: radial-gradient($verde, $azulClaro) fixed;
-  background: conic-gradient(
-      $verde,
-      $textos,
-      $verde
-    )
-    fixed;
+  background: conic-gradient($verde, $textos, $verde) fixed;
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -85,18 +114,15 @@ body {
     justify-content: center;
     flex-direction: column;
 
-    h1 {
-      font-size: 500%;
-      color: azure;
-      margin: 10%;
+    img {
+      margin-top: -20%;
+      width: 400px;
+      height: 400px;
     }
 
-    img {
-      position: relative;
-      top: 50%;
-      left: 50%;
-      margin-bottom: 50%;
-      transform: translate(-50%, -50%);
+    h4 {
+      margin-top: -10%;
+      color: azure;
     }
   }
 }
@@ -107,6 +133,7 @@ header {
   position: sticky !important;
   top: 0;
   margin-top: 1em;
+  z-index: 1;
   nav {
     font-family: Arial, Helvetica, sans-serif !important;
     width: auto;
@@ -132,6 +159,10 @@ header {
       background-color: #dceafc;
     }
   }
+}
+
+span.secciones{
+  padding:100px 20px;
 }
 
 /* --------------------------------- */
@@ -212,7 +243,7 @@ div#inicio {
 
   p {
     padding: 1em;
-    font-family: 'Ruda Black' !important;
+    font-family: "Ruda Black" !important;
     text-align: justify;
   }
 }
@@ -221,16 +252,70 @@ div#inicio {
   @include valoresContenedor();
   background-color: $azulFuerte;
   .contenido {
-    padding: 6% !important;
+    padding: 5% !important;
   }
 }
 
 .containt2 {
   @include valoresContenedor();
-  background-color: $azulClaro;
+  background-color: $azulDeFondo;
   .contenido {
-    padding: 6% !important;
+    padding: 5% !important;
   }
+}
+
+div.servicio {
+  display: flex;
+  padding: 2em;
+
+  div#imagen {
+    img {
+      border-style: solid;
+      border-color: $textos;
+      @include bordes-imagenes();
+      border-width: 4px !important;
+      margin-right: 3em;
+      width: 200px !important;
+      height: 200px !important;
+    }
+  }
+
+  div#texto {
+    text-align: justify;
+    font-family: "Ruda Black" !important;
+  }
+}
+
+.proyectos {
+  margin: 0 0 10em 5em !important;
+  .cardProyectos {
+    font-family: "Ruda Black";
+    text-align: center;
+    width: 300px;
+    height: 300px;
+    border-style: solid;
+    border-color: $textos;
+    border-width: 4px !important;
+    border-radius: 35px !important;
+    img {
+      width: 292px;
+      height: 292px;
+      image-rendering: optimizeQuality;
+      @include bordes-imagenes();
+      filter: brightness(0.5);
+    }
+
+    .card-img-overlay-edit {
+      p {
+        font-size: 13px;
+      }
+    }
+  }
+}
+
+.proceso {
+  content: url("../IMG/PDT.png") !important;
+  width: 100%;
 }
 
 .containerImg {
@@ -338,7 +423,6 @@ div#inicio {
   .box:hover .content p {
     transform: translateY(0px);
   }
-  
 }
 
 @media screen and (max-width: 950px) {
@@ -365,4 +449,76 @@ div#inicio {
 
 .containerImg:hover .box {
   transform: rotateY(25deg);
+}
+
+/* Footer */
+
+footer {
+  @include bordes-superiores();
+  background-color: $azulClaro;
+  div.pie {
+    padding: 6%;
+    display: flex;
+
+    img#logo {
+      @include bordes-imagenes();
+      width: 160px;
+      height: 160px;
+    }
+
+    .redes {
+      margin: 0px 100px 0 100px !important;
+      a {
+        img#icons {
+          border-radius: 50% !important;
+          width: 145px;
+        }
+      }
+    }
+
+    .sobreTuProyecto {
+      float: right !important;
+      text-align: center !important;
+      justify-content: center !important;
+
+      h3{
+        color: $textos;
+      }
+
+      textarea{
+        background-color: rgba($color: $textos, $alpha: 0.8);
+        font-size: 16px;
+        outline: none !important;
+        font-family: 'Ruda Black';
+        padding: 10px;
+        text-align: justify;
+        border-radius: 20px;
+        width: 75%;
+        height: 45%;
+      }
+
+      textarea:hover{
+        background-color: $textos;
+      }
+
+      textarea:focus{
+        background-color: $textos;
+        box-shadow: 0px 2px 15px black;
+        width: 80%;
+        height: 50%;
+      }
+
+      .btns {
+        @include bordes();
+        font-size: 16px !important;
+        background-color: $verde;
+        margin-bottom: 15%;
+      }
+    
+      .btns:hover {
+        background-color: $textos;
+        box-shadow: 0px 2px 15px #233dff;
+      }
+    }
+  }
 }

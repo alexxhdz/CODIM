@@ -19,6 +19,35 @@ body {
   background-color: #000545 !important;
 }
 
+.contentScroll {
+  overflow: auto;
+  overflow-x: hidden;
+}
+
+.contentScroll::-webkit-scrollbar {
+  width: 8px;
+}
+
+.contentScroll::-webkit-scrollbar-thumb {
+  background: #00fe8c;
+  border-radius: 25px;
+}
+
+.contentScroll::-webkit-scrollbar-thumb:active {
+  background: rgba(255, 255, 255, 0.6);
+  width: 10px !important;
+}
+
+.contentScroll::-webkit-scrollbar-thumb:hover {
+  background: #233dff;
+  border-radius: 25px;
+  width: 10px !important;
+}
+
+.contentScroll::-webkit-scrollbar-track {
+  border-radius: 25px;
+}
+
 .txtGradial {
   /*  leverage cascade for cross-browser gradients  */
   background: radial-gradient(#00fe8c, #233dff) fixed;
@@ -62,17 +91,14 @@ body {
   justify-content: center;
   flex-direction: column;
 }
-.banner .hero-contenido h1 {
-  font-size: 500%;
-  color: azure;
-  margin: 10%;
-}
 .banner .hero-contenido img {
-  position: relative;
-  top: 50%;
-  left: 50%;
-  margin-bottom: 50%;
-  transform: translate(-50%, -50%);
+  margin-top: -20%;
+  width: 400px;
+  height: 400px;
+}
+.banner .hero-contenido h4 {
+  margin-top: -10%;
+  color: azure;
 }
 
 /* Estilo de la barra de navegación */
@@ -80,6 +106,7 @@ header {
   position: sticky !important;
   top: 0;
   margin-top: 1em;
+  z-index: 1;
 }
 header nav {
   font-family: Arial, Helvetica, sans-serif !important;
@@ -103,6 +130,10 @@ header nav a {
 }
 header nav a:hover {
   background-color: #dceafc;
+}
+
+span.secciones {
+  padding: 100px 20px;
 }
 
 /* --------------------------------- */
@@ -182,7 +213,7 @@ div#inicio {
   text-align: justify;
 }
 .containt1 .contenido {
-  padding: 6% !important;
+  padding: 5% !important;
 }
 
 .containt2 {
@@ -190,7 +221,7 @@ div#inicio {
   border-top-left-radius: 145px;
   width: 100% !important;
   height: auto !important;
-  background-color: #233dff;
+  background-color: #000545;
 }
 .containt2 h1.acerca {
   text-align: center;
@@ -205,7 +236,54 @@ div#inicio {
   text-align: justify;
 }
 .containt2 .contenido {
-  padding: 6% !important;
+  padding: 5% !important;
+}
+
+div.servicio {
+  display: flex;
+  padding: 2em;
+}
+div.servicio div#imagen img {
+  border-style: solid;
+  border-color: #f4f6fc;
+  border-radius: 35px !important;
+  border-width: 4px !important;
+  margin-right: 3em;
+  width: 200px !important;
+  height: 200px !important;
+}
+div.servicio div#texto {
+  text-align: justify;
+  font-family: "Ruda Black" !important;
+}
+
+.proyectos {
+  margin: 0 0 10em 5em !important;
+}
+.proyectos .cardProyectos {
+  font-family: "Ruda Black";
+  text-align: center;
+  width: 300px;
+  height: 300px;
+  border-style: solid;
+  border-color: #f4f6fc;
+  border-width: 4px !important;
+  border-radius: 35px !important;
+}
+.proyectos .cardProyectos img {
+  width: 292px;
+  height: 292px;
+  image-rendering: optimizeQuality;
+  border-radius: 35px !important;
+  filter: brightness(0.5);
+}
+.proyectos .cardProyectos .card-img-overlay-edit p {
+  font-size: 13px;
+}
+
+.proceso {
+  content: url("../IMG/PDT.png") !important;
+  width: 100%;
 }
 
 .containerImg {
@@ -325,6 +403,67 @@ div#inicio {
 }
 .containerImg:hover .box {
   transform: rotateY(25deg);
+}
+
+/* Footer */
+footer {
+  border-top-right-radius: 145px;
+  border-top-left-radius: 145px;
+  background-color: #233dff;
+}
+footer div.pie {
+  padding: 6%;
+  display: flex;
+}
+footer div.pie img#logo {
+  border-radius: 35px !important;
+  width: 160px;
+  height: 160px;
+}
+footer div.pie .redes {
+  margin: 0px 100px 0 100px !important;
+}
+footer div.pie .redes a img#icons {
+  border-radius: 50% !important;
+  width: 145px;
+}
+footer div.pie .sobreTuProyecto {
+  float: right !important;
+  text-align: center !important;
+  justify-content: center !important;
+}
+footer div.pie .sobreTuProyecto h3 {
+  color: #f4f6fc;
+}
+footer div.pie .sobreTuProyecto textarea {
+  background-color: rgba(244, 246, 252, 0.8);
+  font-size: 16px;
+  outline: none !important;
+  font-family: "Ruda Black";
+  padding: 10px;
+  text-align: justify;
+  border-radius: 20px;
+  width: 75%;
+  height: 45%;
+}
+footer div.pie .sobreTuProyecto textarea:hover {
+  background-color: #f4f6fc;
+}
+footer div.pie .sobreTuProyecto textarea:focus {
+  background-color: #f4f6fc;
+  box-shadow: 0px 2px 15px black;
+  width: 80%;
+  height: 50%;
+}
+footer div.pie .sobreTuProyecto .btns {
+  border-radius: 70px !important;
+  font-size: 16px !important;
+  background-color: #00fe8c;
+  margin-bottom: 15%;
+}
+footer div.pie .sobreTuProyecto .btns:hover {
+  background-color: #f4f6fc;
+  box-shadow: 0px 2px 15px #233dff;
 }
 
 /*# sourceMappingURL=styles.css.map */
