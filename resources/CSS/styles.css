@@ -131,6 +131,9 @@ header nav a {
 header nav a:hover {
   background-color: #dceafc;
 }
+header nav .active {
+  color: #f4f6fc !important;
+}
 
 span.secciones {
   padding: 100px 20px;
@@ -148,18 +151,18 @@ div.presentacion h1.nombre {
   font-size: 100px !important;
 }
 
-div.avatar {
+div.cita {
   align-items: center;
   text-align: center;
   justify-content: center;
 }
-div.avatar .perfil {
+div.cita .imgCita {
   /* Cambiar el avatar por el propio en el url */
   border-radius: 70px !important;
   align-items: center;
   justify-content: center;
 }
-div.avatar .perfil img {
+div.cita .imgCita img {
   border-style: solid !important;
   border-width: 10px !important;
   border-color: #233dff !important;
@@ -169,13 +172,13 @@ div.avatar .perfil img {
   height: 340px;
   margin-bottom: 4%;
 }
-div.avatar .btns {
+div.cita .btns {
   border-radius: 70px !important;
   background-color: #00fe8c;
   margin-bottom: 15%;
   font-size: 20px !important;
 }
-div.avatar .btns:hover {
+div.cita .btns:hover {
   background-color: #f4f6fc;
   box-shadow: 0px 2px 15px #233dff;
 }
@@ -405,6 +408,103 @@ div.servicio div#texto {
   transform: rotateY(25deg);
 }
 
+div#forms {
+  margin-left: 12% !important;
+  text-align: center !important;
+}
+div#forms form#formulario {
+  background-color: #12229d;
+  border-radius: 70px !important;
+  padding: 10% !important;
+  width: 350px;
+  justify-content: center !important;
+  align-items: center !important;
+  font-family: "Ruda Black";
+}
+div#forms form#formulario input {
+  border-radius: 70px !important;
+  margin-bottom: 1em;
+}
+div#forms form#formulario select {
+  border-radius: 70px !important;
+  margin-bottom: 1em;
+}
+div#forms form#formulario textarea {
+  border-radius: 15px !important;
+  margin-bottom: 1em;
+  width: 100% !important;
+  padding: 10px;
+}
+div#forms form#formulario input:focus {
+  background-color: #f4f6fc;
+  box-shadow: 0px 2px 15px black;
+}
+div#forms form#formulario select:focus {
+  background-color: #f4f6fc;
+  box-shadow: 0px 2px 15px black;
+}
+div#forms form#formulario textarea:focus {
+  background-color: #f4f6fc;
+  box-shadow: 0px 2px 15px black;
+  border-style: none !important;
+  outline: none !important;
+}
+div#forms .btns {
+  border-radius: 70px !important;
+  font-size: 16px !important;
+  background-color: #00fe8c;
+}
+div#forms .btns:hover {
+  background-color: #f4f6fc;
+  box-shadow: 0px 2px 15px #233dff;
+}
+
+div#imgContacto {
+  width: 100%;
+  border-radius: 35px !important;
+}
+div#imgContacto img.contacto {
+  border-radius: 35px !important;
+  height: 450px;
+  border-style: solid;
+  border-color: #12229d;
+  border-width: 10px;
+}
+
+div#integrantes {
+  margin-top: 10%;
+}
+div#integrantes div.avatar {
+  margin: 10% !important;
+  width: 250px;
+  height: 250px;
+  border-radius: 70px !important;
+  background-color: #12229d;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+}
+div#integrantes div.avatar img.perfil {
+  /* Cambiar el avatar por el propio en el url */
+  width: 200px;
+  height: 200px;
+  top: 50%;
+  left: 50%;
+  margin-bottom: -30%;
+  transform: translate(0%, -50%);
+}
+div#integrantes div.avatar .btns {
+  border-radius: 70px !important;
+  background-color: #00fe8c;
+  width: 8em;
+  height: 3em;
+  padding-top: 5% !important;
+}
+div#integrantes div.avatar .btns:hover {
+  background-color: #f4f6fc;
+  box-shadow: 0px 2px 15px #233dff;
+}
+
 /* Footer */
 footer {
   border-top-right-radius: 145px;
@@ -412,23 +512,20 @@ footer {
   background-color: #233dff;
 }
 footer div.pie {
-  padding: 6%;
-  display: flex;
+  padding: 6% 6% 0 6%;
 }
-footer div.pie img#logo {
+footer div.pie .logodiv img#logo {
   border-radius: 35px !important;
   width: 160px;
   height: 160px;
 }
 footer div.pie .redes {
-  margin: 0px 100px 0 100px !important;
+  margin-left: -10% !important;
 }
 footer div.pie .redes a img#icons {
-  border-radius: 50% !important;
-  width: 145px;
+  width: 100px;
 }
 footer div.pie .sobreTuProyecto {
-  float: right !important;
   text-align: center !important;
   justify-content: center !important;
 }

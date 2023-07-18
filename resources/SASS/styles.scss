@@ -158,11 +158,15 @@ header {
     a:hover {
       background-color: #dceafc;
     }
+
+    .active {
+      color: $textos !important;
+    }
   }
 }
 
-span.secciones{
-  padding:100px 20px;
+span.secciones {
+  padding: 100px 20px;
 }
 
 /* --------------------------------- */
@@ -179,12 +183,12 @@ div.presentacion {
   }
 }
 
-div.avatar {
+div.cita {
   align-items: center;
   text-align: center;
   justify-content: center;
 
-  .perfil {
+  .imgCita {
     /* Cambiar el avatar por el propio en el url */
     @include bordes();
     align-items: center;
@@ -451,45 +455,152 @@ div.servicio {
   transform: rotateY(25deg);
 }
 
+div#forms {
+  margin-left: 12% !important;
+  text-align: center !important;
+  form#formulario {
+    background-color: $azulFuerte;
+    @include bordes();
+    padding: 10% !important;
+    width: 350px;
+    justify-content: center !important;
+    align-items: center !important;
+    font-family: "Ruda Black";
+
+    input {
+      @include bordes();
+      margin-bottom: 1em;
+    }
+
+    select {
+      @include bordes();
+      margin-bottom: 1em;
+    }
+
+    textarea {
+      border-radius: 15px !important;
+      margin-bottom: 1em;
+      width: 100% !important;
+      padding: 10px;
+    }
+
+    input:focus {
+      background-color: $textos;
+      box-shadow: 0px 2px 15px black;
+    }
+
+    select:focus {
+      background-color: $textos;
+      box-shadow: 0px 2px 15px black;
+    }
+
+    textarea:focus {
+      background-color: $textos;
+      box-shadow: 0px 2px 15px black;
+      border-style: none !important;
+      outline: none !important;
+    }
+
+  }
+
+  .btns {
+    @include bordes();
+    font-size: 16px !important;
+    background-color: $verde;
+  }
+
+  .btns:hover {
+    background-color: $textos;
+    box-shadow: 0px 2px 15px #233dff;
+  }
+}
+
+div#imgContacto{
+  width: 100%;
+  @include bordes-imagenes();
+  img.contacto{
+    @include bordes-imagenes();
+    height: 450px;
+    border-style: solid;
+  border-color: $azulFuerte;
+  border-width: 10px;
+  }
+}
+
+div#integrantes {
+  margin-top: 10%;
+  div.avatar {
+    margin: 10% !important;
+    width: 250px;
+    height: 250px;
+    @include bordes();
+    background-color: $azulFuerte;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+
+    img.perfil {
+      /* Cambiar el avatar por el propio en el url */
+      width: 200px;
+      height: 200px;
+      top: 50%;
+      left: 50%;
+      margin-bottom: -30%;
+      transform: translate(0%, -50%);
+    }
+
+    .btns {
+      @include bordes();
+      background-color: $verde;
+      width: 8em;
+      height: 3em;
+      padding-top: 5% !important;
+    }
+
+    .btns:hover {
+      background-color: $textos;
+      box-shadow: 0px 2px 15px #233dff;
+    }
+  }
+}
+
 /* Footer */
 
 footer {
   @include bordes-superiores();
   background-color: $azulClaro;
   div.pie {
-    padding: 6%;
-    display: flex;
-
-    img#logo {
-      @include bordes-imagenes();
-      width: 160px;
-      height: 160px;
+    padding: 6% 6% 0 6%;
+    .logodiv {
+      img#logo {
+        @include bordes-imagenes();
+        width: 160px;
+        height: 160px;
+      }
     }
 
     .redes {
-      margin: 0px 100px 0 100px !important;
+      margin-left: -10% !important;
       a {
         img#icons {
-          border-radius: 50% !important;
-          width: 145px;
+          width: 100px;
         }
       }
     }
 
     .sobreTuProyecto {
-      float: right !important;
       text-align: center !important;
       justify-content: center !important;
 
-      h3{
+      h3 {
         color: $textos;
       }
 
-      textarea{
+      textarea {
         background-color: rgba($color: $textos, $alpha: 0.8);
         font-size: 16px;
         outline: none !important;
-        font-family: 'Ruda Black';
+        font-family: "Ruda Black";
         padding: 10px;
         text-align: justify;
         border-radius: 20px;
@@ -497,11 +608,11 @@ footer {
         height: 45%;
       }
 
-      textarea:hover{
+      textarea:hover {
         background-color: $textos;
       }
 
-      textarea:focus{
+      textarea:focus {
         background-color: $textos;
         box-shadow: 0px 2px 15px black;
         width: 80%;
@@ -514,7 +625,7 @@ footer {
         background-color: $verde;
         margin-bottom: 15%;
       }
-    
+
       .btns:hover {
         background-color: $textos;
         box-shadow: 0px 2px 15px #233dff;
