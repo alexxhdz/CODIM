@@ -142,6 +142,96 @@ body {
   }
 }
 
+.presentacion{
+  h1 {
+    font-size: 9vmin;
+    font-weight: 700;
+    margin: 1rem 0 1rem 2rem;
+  }
+  
+  @keyframes typing {
+    0.0000%, 27.3488% { content: ""; }      
+    1.1395%, 26.2093% { content: "m"; }    
+    2.2791%, 25.0698% { content: "mu"; }   
+    3.4186%, 23.9302% { content: "mun"; }  
+    4.5581%, 22.7907% { content: "mund"; } 
+    5.6977%, 21.6512% { content: "mundo."; }
+  
+    30.7674%, 51.2791% { content: ""; }
+    31.9070%, 50.1395% { content: "n"; }
+    33.0465%, 49.0000% { content: "ne"; }
+    34.1860%, 47.8605% { content: "neg"; }
+    35.3256%, 46.7209% { content: "nego"; }
+    36.4651%, 45.5814% { content: "negoc"; }
+    37.6047%, 44.4419% { content: "negoci"; }
+    38.6047%, 43.4419% { content: "negocio."; }
+  
+    54.6977%, 75.2093% { content: ""; }  
+    55.8372%, 74.0698% { content: "m"; } 
+    56.9767%, 72.9302% { content: "mu"; } 
+    58.1163%, 71.7907% { content: "mun"; }  
+    59.2558%, 70.6512% { content: "mund"; } 
+    60.3953%, 69.5116% { content: "mundo."; } 
+  
+    78.6279%, 96.8605% { content: ""; }
+    79.7674%, 95.7209% { content: "n"; }
+    80.9070%, 94.5814% { content: "ne"; }
+    82.0465%, 93.4419% { content: "neg"; }
+    83.1860%, 92.3023% { content: "nego"; }
+    84.3651%, 91.2814% { content: "negoc"; }
+    85.3651%, 90.1419% { content: "negoci"; }
+    86.3651%, 89.0419% { content: "negocio."; }
+  }
+  
+  @keyframes blink {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0; }
+  }
+  
+  .typewriter {
+    --caret: currentcolor;
+  }
+  
+  .typewriter::before {
+    content: "";
+    animation: typing 13.5s infinite;
+  }
+  
+  .typewriter::after {
+    content: "";
+    border-right: 1px solid var(--caret);
+    animation: blink 0.5s linear infinite;
+  }
+  
+  .typewriter.thick::after {
+    border-right: 1ch solid var(--caret);
+  }
+  
+  .typewriter.nocaret::after {
+    border-right: 0;
+  }
+  
+  
+  @media (prefers-reduced-motion) {
+    .typewriter::after {
+      animation: none;
+    }
+    
+    @keyframes sequencePopup {
+      0%, 100% { content: "developer"; }
+      25% { content: "writer"; }
+      50% { content: "reader"; }
+      75% { content: "human"; }
+    }
+  
+    .typewriter::before {
+      content: "developer";
+      animation: sequencePopup 12s linear infinite;
+    }
+  }
+  
+}
+
 /* Estilo de la barra de navegación */
 header {
   z-index: 1;

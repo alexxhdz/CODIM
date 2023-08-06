@@ -144,6 +144,11 @@
         </div>
 
     </div>
+    <div class="presentacion">
+        <h1 aria-label="Hi! I'm a developer">
+            Digitaliza tu&nbsp;<span class="typewriter"></span>
+        </h1>
+    </div>
 
     <div id="servicios">
         <div class="row">
