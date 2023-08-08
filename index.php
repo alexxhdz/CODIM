@@ -5,7 +5,7 @@
     <?php require_once("public/views/layouts/head.php") ?>
 </head>
 
-<body class="contentScroll" data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="50">
+<body class="contentScroll"> <!-- data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="50" -->
 
     <div class="banner">
         <img src="resources/IMG/codigoMorado.jpg" alt="Fondo de la pagina">
@@ -18,30 +18,43 @@
 
     <header>
         <nav class="navbar navbar-expand-sm navDesign">
-            <div class="container-fluid">
-                <a class="navbar-brand logo" href="#"><img src="resources/IMG/Home.png" alt="Logo"></a>
+            <button class="btn btn-outline btn-menu" type="button" data-bs-toggle="offcanvas" data-bs-target="#menu"><span class="fa">&#xf0c9;</span>&nbsp;Menú</button>
+            <div class="container-fluid justify-content-center">
+                <a class="navbar-brand logo" href=""><img src="resources/IMG/Home.png" alt="Logo"></a>
+            </div>
+            <div class="justify-content-end">
+                <a class="contact" href="#contacto">Contáctanos</a>
+            </div>
+        </nav>
+
+        <div class="offcanvas offcanvas-start offcanvas-edit" id="menu">
+            <div class="offcanvas-header">
+                <h1 class="offcanvas-title titulo">Menú</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+            </div>
+            <div class="offcanvas-body">
                 <ul class="navbar-nav nav justify-content-end">
                     <li class="nav-item">
                         <a class="nav-link" href="#">Inicio</a>
                     </li>
+                    <p></p>
                     <li class="nav-item">
                         <a class="nav-link" href="#">Nosotros</a>
                     </li>
+                    <p></p>
                     <li class="nav-item">
                         <a class="nav-link" href="#">Servicios</a>
                     </li>
+                    <p></p>
                     <li class="nav-item">
                         <a class="nav-link" href="#">Portafolio</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Contacto</a>
-                    </li>
                 </ul>
             </div>
-            </div>
-        </nav>
-
+        </div>
     </header>
+
+
 
 
     <div id="conocenos">
@@ -144,11 +157,11 @@
         </div>
 
     </div>
-    <div class="presentacion">
+    <!--     <div class="presentacion">
         <h1 aria-label="Hi! I'm a developer">
             Digitaliza tu&nbsp;<span class="typewriter"></span>
         </h1>
-    </div>
+    </div> -->
 
     <div id="servicios">
         <div class="row">

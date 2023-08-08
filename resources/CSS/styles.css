@@ -250,12 +250,56 @@ header {
 header .navDesign {
   background-color: #2b1e4a !important;
   padding: 1% !important;
+  color: #e6e6f4 !important;
+}
+header .navDesign .btn-menu {
+  display: flex !important;
+  outline: none !important;
+  border: none !important;
+  font-size: 30px !important;
+  font-weight: bold !important;
+  color: #e6e6f4 !important;
+}
+header .navDesign .btn-menu span {
+  margin-top: 5px;
+}
+header .navDesign .contact {
+  font-size: 30px !important;
+  font-weight: bold !important;
 }
 header .navDesign img {
-  width: 60px !important;
+  width: 70px !important;
 }
 header .navDesign a {
   color: #e6e6f4;
+  text-decoration: none !important;
+}
+header .offcanvas-edit {
+  background-color: rgba(58, 32, 93, 0.5) !important;
+  color: #e6e6f4 !important;
+  backdrop-filter: blur(10px) !important;
+  text-align: center;
+  padding: 1em;
+}
+header .offcanvas-edit h1.titulo {
+  font-family: "REM", sans-serif;
+  font-weight: bold;
+}
+header .offcanvas-edit .btn-close {
+  background-color: #e6e6f4;
+}
+header .offcanvas-edit .nav-item {
+  background-color: rgba(230, 230, 244, 0.5);
+  color: #3a205d;
+  border-radius: 5px;
+}
+header .offcanvas-edit .nav-item .nav-link {
+  font-weight: bold !important;
+  font-size: 18px !important;
+}
+header .offcanvas-edit .nav-item:hover {
+  background-color: #e6e6f4;
+  box-shadow: 0px 2px 5px rgb(143, 143, 143);
 }
 
 /* --------------------------------- */
@@ -486,30 +530,6 @@ div#contacto section {
   align-items: center;
   justify-content: center;
   height: 100vh;
-}
-div#contacto section .color {
-  position: absolute;
-  filter: blur(150px);
-}
-div#contacto section .color:nth-child(1) {
-  top: -350px;
-  background: cornflowerblue;
-  width: 600px;
-  height: 600px;
-}
-div#contacto section .color:nth-child(2) {
-  bottom: -150px;
-  left: 100px;
-  background: #990bac;
-  width: 500px;
-  height: 500px;
-}
-div#contacto section .color:nth-child(3) {
-  bottom: 50px;
-  left: 0px;
-  background: #260bac;
-  width: 300px;
-  height: 300px;
 }
 div#contacto section .box {
   position: relative;
